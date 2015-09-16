@@ -77,10 +77,9 @@ CREATE TABLE IF NOT EXISTS `renap`.`persona` (
   `id_municipio` INT NOT NULL,
   `direccion` VARCHAR(150) NOT NULL,
   `id_pais` INT NULL,
-  `fecha_creacion` TIMESTAMP NOT NULL DEFAULT  CURRENT_TIMESTAMP,
+  `fecha_creacion` DATETIME DEFAULT CURRENT_TIMESTAMP,
   `creacion` INT NOT NULL,
-  `ultima_modificacion` INT NOT NULL,
-  `fecha_modificacion` TIMESTAMP NOT NULL DEFAULT  CURRENT_TIMESTAMP,
+  `fecha_modificacion` DATETIME ON UPDATE CURRENT_TIMESTAMP,
   `muerto` TINYINT(1) NULL DEFAULT 0,
   `eliminado` TINYINT(1) NOT NULL,
   `registrado_por` CHAR(10) NULL,
@@ -162,7 +161,7 @@ DROP TABLE IF EXISTS `renap`.`dpi` ;
 CREATE TABLE IF NOT EXISTS `renap`.`dpi` (
   `id_dpi` INT NOT NULL AUTO_INCREMENT,
   `dpi` CHAR(10) NOT NULL,
-  `fecha_emision` TIMESTAMP NOT NULL DEFAULT NOW(),
+  `fecha_emision` DATETIME NOT NULL DEFAULT NOW(),
   `fecha_vencimiento` DATE NOT NULL,
   `estado_documento` INT NOT NULL,
   PRIMARY KEY (`id_dpi`),
@@ -189,7 +188,7 @@ DROP TABLE IF EXISTS `renap`.`usuario` ;
 CREATE TABLE IF NOT EXISTS `renap`.`usuario` (
   `usuario` VARCHAR(40) NOT NULL,
   `passwd` VARCHAR(200) NOT NULL,
-  `fecha_creacion` TIMESTAMP NOT NULL DEFAULT now(),
+  `fecha_creacion` DATETIME NOT NULL DEFAULT now(),
   `bloqueado` TINYINT(1) NOT NULL DEFAULT 1,
   PRIMARY KEY (`usuario`))
 ENGINE = InnoDB;
