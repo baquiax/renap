@@ -15,9 +15,19 @@ connection.connect(function(err) {
 	console.log("Yeah! Nos hemos conectado a MySQL!" + connection.threadId);
 });
 
-/* GET home page. */
+/* GET login page. */
 router.get('/', function(req, res, next) {
+  res.render('login');
+});
+
+/* GET home page. */
+router.get('/home', function(req, res, next) {
   res.render('home');
+});
+
+/* GET register person. */
+router.get('/register-person', function(req, res, next) {
+  res.render('register-person');
 });
 
 module.exports = router;
