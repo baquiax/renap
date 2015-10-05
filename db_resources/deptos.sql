@@ -1,3 +1,8 @@
+DELETE FROM municipio WHERE id_municipio > 0;
+DELETE FROM departamento WHERE id_departamento > 0;
+ALTER TABLE departamento AUTO_INCREMENT = 1;
+ALTER TABLE municipio AUTO_INCREMENT = 1;
+
 INSERT INTO departamento(nombre) VALUES ('Alta Verapaz');
 INSERT INTO municipio(id_departamento, nombre) VALUES (1,'Chahal');
 INSERT INTO municipio(id_departamento, nombre) VALUES (1,'Lanquín');
@@ -353,3 +358,5 @@ INSERT INTO municipio(id_departamento, nombre) VALUES (22,'Gualán');
 INSERT INTO municipio(id_departamento, nombre) VALUES (22,'San Diego');
 INSERT INTO municipio(id_departamento, nombre) VALUES (22,'Huité');
 INSERT INTO municipio(id_departamento, nombre) VALUES (22,'Teculután');
+
+INSERT INTO pais(nombre, code) VALUES ('Guatemala', 'GT');
