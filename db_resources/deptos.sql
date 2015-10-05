@@ -1,352 +1,355 @@
--Alta Verapaz
-Chahal
-Lanquín
-San Juan Chamelco
-Santa María Cahabón
-Tucurú
-Chisec
-Panzós
-San Pedro Carchá
-Senahú
-Cobán
-Raxruhá
-Santa Catalina La Tinta
-Tactic
-Fray Bartolomé de las Casas
-San Cristóbal Verapaz
-Santa Cruz Verapaz
-Tamahú
--Baja Verapaz
-Cubulco
-Salamá
-Granados
-San Jerónimo
-Purulhá
-San Miguel Chicaj
-Rabinal
-Santa Cruz el Chol
--Chimaltenango
-Acatenango
-Patzicía
-San José Poaquil
-Santa Cruz Balanyá
-Chimaltenango
-Patzún
-San Juan Comalapa
-Tecpán
-El Tejar
-Pochuta
-San Martín Jilotepeque
-Yepocapa
-Parramos
-San Andrés Itzapa
-Santa Apolonia
-Zaragoza
--Chiquimula
-Camotán
-Ipala
-San Jacinto
-Chiquimula
-Jocotán
-San José La Arada
-Concepción Las Minas
-Olopa
-San Juan Ermita
-Esquipulas
-Quezaltepeque
--El Progreso
-El Jícaro
-San Antonio La Paz
-Guastatoya
-San Cristóbal Acasaguastlán
-Morazán
-Sanarate
-San Agustín Acasaguastlán
-Sansare
--Escuintla
-Escuintla
-La Gomera
-San José
-Tiquisate
-Guanagazapa
-Masagua
-San Vicente Pacaya
-Iztapa
-Nueva Concepción
-Santa Lucía Cotzumalguapa
-La Democracia
-Palín
-Siquinalá
--Guatemala
-Amatitlán
-Guatemala
-San José Pinula
-San Pedro Sacatepéquez
-Villa Nueva
-Chinautla
-Mixco
-San Juan Sacatepéquez
-San Raymundo
-Chuarrancho
-Palencia
-San Miguel Petapa
-Santa Catarina Pinula
-Fraijanes
-San José del Golfo
-San Pedro Ayampuc
-Villa Canales
--Huehuetenango
-Aguacatán
-Cuilco
-La Libertad
-San Gaspar Ixchil
-San Mateo Ixtatán
-San Rafael La Independencia
-Santa Ana Huista
-Santiago Chimaltenango
-Chiantla
-Huehuetenango
-Malacatancito
-San Ildefonso Ixtahuacán
-San Miguel Acatán
-San Rafael Petzal
-Santa Bárbara
-Tectitán
-Colotenango
-Jacaltenango
-Nentón
-San Juan Atitán
-San Pedro Necta
-San Sebastián Coatán
-Santa Cruz Barillas
-Todos Santos Cuchumatánes
-Concepción Huista
-La Democracia
-San Antonio Huista
-San Juan Ixcoy
-San Pedro Soloma
-San Sebastián
-Santa Eulalia
-Unión Cantinil
--Jalapa
-Jalapa
-San Luis Jilotepeque
-Mataquescuintla
-San Manuel Chaparrón
-Monjas
-San Pedro Pinula
-San Carlos Alzatate
--Jutiapa
-Agua Blanca
-Conguaco
-Jerez
-Quesada
-Zapotitlán
-Asunción Mita
-El Adelanto
-Jutiapa
-San José Acatempa
-
-Atescatempa
-
-El Progreso
-Moyuta
-Santa Catarina Mita
-Comapa
-Jalpatagua
-Pasaco
-Yupiltepeque
--Petén
-Dolores
-Melchor de Mencos
-San Francisco
-Sayaxché
-Flores
-Poptún
-San José
-La Libertad
-San Andrés
-San Luis
-Las Cruces
-San Benito
-Santa Ana
--Quetzaltenango
-Almolonga
-Coatepeque
-Flores Costa Cuca
-Olintepeque
-San Carlos Sija
-San Mateo
-Cabricán
-Colomba
-Génova
-Palestina de Los Altos
-San Francisco La Unión
-San Miguel Sigüilá
-Cajolá
-Concepción Chiquirichapa
-Huitán
-Quetzaltenango
-San Juan Ostuncalco
-Sibilia
-Cantel
-El Palmar
-La Esperanza
-Salcajá
-San Martín Sacatepéquez
-Zunil
--Quiché
-Canillá
-Chichicastenango
-Joyabaj
-S
-San Juan Cotzal
-Zacualpa
-Chajul
-Chinique
-Nebaj
-San Andrés Sajcabajá
-San Pedro Jocopilas
-Chicamán
-Cunén
-Pachalum
-San Antonio Ilotenango
-Santa Cruz del Quiché
-Chiché
-Ixcán
-Patzité
-San Bartolomé Jocotenango
-Uspantán
--Retalhuleu
-Champerico
-San Andrés Villa Seca
-Santa Cruz Muluá
-El Asintal
-San Felipe
-Nuevo San Carlos
-San Martín Zapotitlán
-Retalhuleu
-San Sebastián
--Sacatepéquez
-Alotenango
-Magdalena Milpas Altas
-San Lucas Sacatepéquez
-Santa María de Jesús
-La Antigua Guatemala
-Pastores
-San Miguel Dueñas
-Santiago Sacatepéquez
-Ciudad Vieja
-San Antonio Aguas Calientes
-Santa Catarina Barahona
-Santo Domingo Xenacoj
-Jocotenango
-San Bartolomé Milpas Altas
-Santa Lucía Milpas Altas
-Sumpango
--San Marcos
-Ayutla
-El Quetzal
-Ixchiguán
-Ocós
-San Cristóbal Cucho
-San Miguel Ixtahuacán
-Sibinal
-Tejutla
-Catarina
-El Rodeo
-La Reforma
-Pajapita
-San José Ojetenam
-San Pablo
-Sipacapa
-Comitancillo
-El Tumbador
-Malacatán
-Río Blanco
-San Lorenzo
-San Pedro Sacatepéquez
-Tacaná
-Concepción Tutuapa
-Esquipulas Palo Gordo
-Nuevo Progreso
-San Antonio Sacatepéquez
-San Marcos
-San Rafael Pie de La Cuesta
-Tajumulco
--Santa Rosa
-Barberena
-Guazacapán
-San Juan Tecuaco
-Santa Rosa de Lima
-Casillas
-Nueva Santa Rosa
-San Rafaél Las Flores
-Taxisco
-Chiquimulilla
-Oratorio
-Santa Cruz Naranjo
-Cuilapa
-Pueblo Nuevo Viñas
-Santa María Ixhuatán
--Sololá
-Concepción
-San Antonio Palopó
-San Marcos La Laguna
-Santa Catarina Palopó
-Santa María Visitación
-Nahualá
-San José Chacayá
-San Pablo La Laguna
-Santa Clara La Laguna
-Santiago Atitlán
-Panajachel
-San Juan La Laguna
-San Pedro La Laguna
-Santa Cruz La Laguna
-Sololá
-San Andrés Semetabaj
-San Lucas Tolimán
-Santa Catarina Ixtahuacan
-Santa Lucía Utatlán
--Suchitepéquez
-Chicacao
-Pueblo Nuevo
-San Bernardino
-San Juan Bautista
-Santa Bárbara
-Cuyotenango
-Río Bravo
-San Francisco Zapotitlán
-San Lorenzo
-Santo Domingo
-Mazatenango
-Samayac
-San Gabriel
-San Miguel Panán
-Santo Tomás La Unión
-Patulul
-San Antonio
-San José El Ídolo
-San Pablo Jocopilas
-Zunilito
--Totonicapán
-Momostenango
-San Francisco El Alto
-San Andrés Xecul
-Santa Lucía La Reforma
-San Bartolo
-Santa María Chiquimula
-San Cristóbal Totonicapán
-Totonicapán
--Zacapa
-Cabañas
-La Unión
-Usumatlán
-Estanzuela
-Río Hondo
-Zacapa
-Gualán
-San Diego
-Huité
-Teculután
+INSER INTO departamento(nombre) VALUES ('Alta Verapaz');
+INSER INTO municipio(id_departamento, nombre) VALUES (1,'Chahal');
+INSER INTO municipio(id_departamento, nombre) VALUES (1,'Lanquín');
+INSER INTO municipio(id_departamento, nombre) VALUES (1,'San Juan Chamelco');
+INSER INTO municipio(id_departamento, nombre) VALUES (1,'Santa María Cahabón');
+INSER INTO municipio(id_departamento, nombre) VALUES (1,'Tucurú');
+INSER INTO municipio(id_departamento, nombre) VALUES (1,'Chisec');
+INSER INTO municipio(id_departamento, nombre) VALUES (1,'Panzós');
+INSER INTO municipio(id_departamento, nombre) VALUES (1,'San Pedro Carchá');
+INSER INTO municipio(id_departamento, nombre) VALUES (1,'Senahú');
+INSER INTO municipio(id_departamento, nombre) VALUES (1,'Cobán');
+INSER INTO municipio(id_departamento, nombre) VALUES (1,'Raxruhá');
+INSER INTO municipio(id_departamento, nombre) VALUES (1,'Santa Catalina La Tinta');
+INSER INTO municipio(id_departamento, nombre) VALUES (1,'Tactic');
+INSER INTO municipio(id_departamento, nombre) VALUES (1,'Fray Bartolomé de las Casas');
+INSER INTO municipio(id_departamento, nombre) VALUES (1,'San Cristóbal Verapaz');
+INSER INTO municipio(id_departamento, nombre) VALUES (1,'Santa Cruz Verapaz');
+INSER INTO municipio(id_departamento, nombre) VALUES (1,'Tamahú');
+INSER INTO departamento(nombre) VALUES ('Baja Verapaz');
+INSER INTO municipio(id_departamento, nombre) VALUES (2,'Cubulco');
+INSER INTO municipio(id_departamento, nombre) VALUES (2,'Salamá');
+INSER INTO municipio(id_departamento, nombre) VALUES (2,'Granados');
+INSER INTO municipio(id_departamento, nombre) VALUES (2,'San Jerónimo');
+INSER INTO municipio(id_departamento, nombre) VALUES (2,'Purulhá');
+INSER INTO municipio(id_departamento, nombre) VALUES (2,'San Miguel Chicaj');
+INSER INTO municipio(id_departamento, nombre) VALUES (2,'Rabinal');
+INSER INTO municipio(id_departamento, nombre) VALUES (2,'Santa Cruz el Chol');
+INSER INTO departamento(nombre) VALUES ('Chimaltenango');
+INSER INTO municipio(id_departamento, nombre) VALUES (3,'Acatenango');
+INSER INTO municipio(id_departamento, nombre) VALUES (3,'Patzicía');
+INSER INTO municipio(id_departamento, nombre) VALUES (3,'San José Poaquil');
+INSER INTO municipio(id_departamento, nombre) VALUES (3,'Santa Cruz Balanyá');
+INSER INTO municipio(id_departamento, nombre) VALUES (3,'Chimaltenango');
+INSER INTO municipio(id_departamento, nombre) VALUES (3,'Patzún');
+INSER INTO municipio(id_departamento, nombre) VALUES (3,'San Juan Comalapa');
+INSER INTO municipio(id_departamento, nombre) VALUES (3,'Tecpán');
+INSER INTO municipio(id_departamento, nombre) VALUES (3,'El Tejar');
+INSER INTO municipio(id_departamento, nombre) VALUES (3,'Pochuta');
+INSER INTO municipio(id_departamento, nombre) VALUES (3,'San Martín Jilotepeque');
+INSER INTO municipio(id_departamento, nombre) VALUES (3,'Yepocapa');
+INSER INTO municipio(id_departamento, nombre) VALUES (3,'Parramos');
+INSER INTO municipio(id_departamento, nombre) VALUES (3,'San Andrés Itzapa');
+INSER INTO municipio(id_departamento, nombre) VALUES (3,'Santa Apolonia');
+INSER INTO municipio(id_departamento, nombre) VALUES (3,'Zaragoza');
+INSER INTO departamento(nombre) VALUES ('Chiquimula');
+INSER INTO municipio(id_departamento, nombre) VALUES (4,'Camotán');
+INSER INTO municipio(id_departamento, nombre) VALUES (4,'Ipala');
+INSER INTO municipio(id_departamento, nombre) VALUES (4,'San Jacinto');
+INSER INTO municipio(id_departamento, nombre) VALUES (4,'Chiquimula');
+INSER INTO municipio(id_departamento, nombre) VALUES (4,'Jocotán');
+INSER INTO municipio(id_departamento, nombre) VALUES (4,'San José La Arada');
+INSER INTO municipio(id_departamento, nombre) VALUES (4,'Concepción Las Minas');
+INSER INTO municipio(id_departamento, nombre) VALUES (4,'Olopa');
+INSER INTO municipio(id_departamento, nombre) VALUES (4,'San Juan Ermita');
+INSER INTO municipio(id_departamento, nombre) VALUES (4,'Esquipulas');
+INSER INTO municipio(id_departamento, nombre) VALUES (4,'Quezaltepeque');
+INSER INTO departamento(nombre) VALUES ('El Progreso');
+INSER INTO municipio(id_departamento, nombre) VALUES (5,'El Jícaro');
+INSER INTO municipio(id_departamento, nombre) VALUES (5,'San Antonio La Paz');
+INSER INTO municipio(id_departamento, nombre) VALUES (5,'Guastatoya');
+INSER INTO municipio(id_departamento, nombre) VALUES (5,'San Cristóbal Acasaguastlán');
+INSER INTO municipio(id_departamento, nombre) VALUES (5,'Morazán');
+INSER INTO municipio(id_departamento, nombre) VALUES (5,'Sanarate');
+INSER INTO municipio(id_departamento, nombre) VALUES (5,'San Agustín Acasaguastlán');
+INSER INTO municipio(id_departamento, nombre) VALUES (5,'Sansare');
+INSER INTO departamento(nombre) VALUES ('Escuintla');
+INSER INTO municipio(id_departamento, nombre) VALUES (6,'Escuintla');
+INSER INTO municipio(id_departamento, nombre) VALUES (6,'La Gomera');
+INSER INTO municipio(id_departamento, nombre) VALUES (6,'San José');
+INSER INTO municipio(id_departamento, nombre) VALUES (6,'Tiquisate');
+INSER INTO municipio(id_departamento, nombre) VALUES (6,'Guanagazapa');
+INSER INTO municipio(id_departamento, nombre) VALUES (6,'Masagua');
+INSER INTO municipio(id_departamento, nombre) VALUES (6,'San Vicente Pacaya');
+INSER INTO municipio(id_departamento, nombre) VALUES (6,'Iztapa');
+INSER INTO municipio(id_departamento, nombre) VALUES (6,'Nueva Concepción');
+INSER INTO municipio(id_departamento, nombre) VALUES (6,'Santa Lucía Cotzumalguapa');
+INSER INTO municipio(id_departamento, nombre) VALUES (6,'La Democracia');
+INSER INTO municipio(id_departamento, nombre) VALUES (6,'Palín');
+INSER INTO municipio(id_departamento, nombre) VALUES (6,'Siquinalá');
+INSER INTO departamento(nombre) VALUES ('Guatemala');
+INSER INTO municipio(id_departamento, nombre) VALUES (7,'Amatitlán');
+INSER INTO municipio(id_departamento, nombre) VALUES (7,'Guatemala');
+INSER INTO municipio(id_departamento, nombre) VALUES (7,'San José Pinula');
+INSER INTO municipio(id_departamento, nombre) VALUES (7,'San Pedro Sacatepéquez');
+INSER INTO municipio(id_departamento, nombre) VALUES (7,'Villa Nueva');
+INSER INTO municipio(id_departamento, nombre) VALUES (7,'Chinautla');
+INSER INTO municipio(id_departamento, nombre) VALUES (7,'Mixco');
+INSER INTO municipio(id_departamento, nombre) VALUES (7,'San Juan Sacatepéquez');
+INSER INTO municipio(id_departamento, nombre) VALUES (7,'San Raymundo');
+INSER INTO municipio(id_departamento, nombre) VALUES (7,'Chuarrancho');
+INSER INTO municipio(id_departamento, nombre) VALUES (7,'Palencia');
+INSER INTO municipio(id_departamento, nombre) VALUES (7,'San Miguel Petapa');
+INSER INTO municipio(id_departamento, nombre) VALUES (7,'Santa Catarina Pinula');
+INSER INTO municipio(id_departamento, nombre) VALUES (7,'Fraijanes');
+INSER INTO municipio(id_departamento, nombre) VALUES (7,'San José del Golfo');
+INSER INTO municipio(id_departamento, nombre) VALUES (7,'San Pedro Ayampuc');
+INSER INTO municipio(id_departamento, nombre) VALUES (7,'Villa Canales');
+INSER INTO departamento(nombre) VALUES ('Huehuetenango');
+INSER INTO municipio(id_departamento, nombre) VALUES (8,'Aguacatán');
+INSER INTO municipio(id_departamento, nombre) VALUES (8,'Cuilco');
+INSER INTO municipio(id_departamento, nombre) VALUES (8,'La Libertad');
+INSER INTO municipio(id_departamento, nombre) VALUES (8,'San Gaspar Ixchil');
+INSER INTO municipio(id_departamento, nombre) VALUES (8,'San Mateo Ixtatán');
+INSER INTO municipio(id_departamento, nombre) VALUES (8,'San Rafael La Independencia');
+INSER INTO municipio(id_departamento, nombre) VALUES (8,'Santa Ana Huista');
+INSER INTO municipio(id_departamento, nombre) VALUES (8,'Santiago Chimaltenango');
+INSER INTO municipio(id_departamento, nombre) VALUES (8,'Chiantla');
+INSER INTO municipio(id_departamento, nombre) VALUES (8,'Huehuetenango');
+INSER INTO municipio(id_departamento, nombre) VALUES (8,'Malacatancito');
+INSER INTO municipio(id_departamento, nombre) VALUES (8,'San Ildefonso Ixtahuacán');
+INSER INTO municipio(id_departamento, nombre) VALUES (8,'San Miguel Acatán');
+INSER INTO municipio(id_departamento, nombre) VALUES (8,'San Rafael Petzal');
+INSER INTO municipio(id_departamento, nombre) VALUES (8,'Santa Bárbara');
+INSER INTO municipio(id_departamento, nombre) VALUES (8,'Tectitán');
+INSER INTO municipio(id_departamento, nombre) VALUES (8,'Colotenango');
+INSER INTO municipio(id_departamento, nombre) VALUES (8,'Jacaltenango');
+INSER INTO municipio(id_departamento, nombre) VALUES (8,'Nentón');
+INSER INTO municipio(id_departamento, nombre) VALUES (8,'San Juan Atitán');
+INSER INTO municipio(id_departamento, nombre) VALUES (8,'San Pedro Necta');
+INSER INTO municipio(id_departamento, nombre) VALUES (8,'San Sebastián Coatán');
+INSER INTO municipio(id_departamento, nombre) VALUES (8,'Santa Cruz Barillas');
+INSER INTO municipio(id_departamento, nombre) VALUES (8,'Todos Santos Cuchumatánes');
+INSER INTO municipio(id_departamento, nombre) VALUES (8,'Concepción Huista');
+INSER INTO municipio(id_departamento, nombre) VALUES (8,'La Democracia');
+INSER INTO municipio(id_departamento, nombre) VALUES (8,'San Antonio Huista');
+INSER INTO municipio(id_departamento, nombre) VALUES (8,'San Juan Ixcoy');
+INSER INTO municipio(id_departamento, nombre) VALUES (8,'San Pedro Soloma');
+INSER INTO municipio(id_departamento, nombre) VALUES (8,'San Sebastián');
+INSER INTO municipio(id_departamento, nombre) VALUES (8,'Santa Eulalia');
+INSER INTO municipio(id_departamento, nombre) VALUES (8,'Unión Cantinil');
+INSER INTO departamento(nombre) VALUES ('Izabal');
+INSER INTO municipio(id_departamento, nombre) VALUES (9,'El Estor');
+INSER INTO municipio(id_departamento, nombre) VALUES (9,'Puerto Barrios');
+INSER INTO municipio(id_departamento, nombre) VALUES (9,'Livingston');
+INSER INTO municipio(id_departamento, nombre) VALUES (9,'Los Amates');
+INSER INTO municipio(id_departamento, nombre) VALUES (9,'Morales');
+INSER INTO departamento(nombre) VALUES ('Jalapa');
+INSER INTO municipio(id_departamento, nombre) VALUES (10,'Jalapa');
+INSER INTO municipio(id_departamento, nombre) VALUES (10,'San Luis Jilotepeque');
+INSER INTO municipio(id_departamento, nombre) VALUES (10,'Mataquescuintla');
+INSER INTO municipio(id_departamento, nombre) VALUES (10,'San Manuel Chaparrón');
+INSER INTO municipio(id_departamento, nombre) VALUES (10,'Monjas');
+INSER INTO municipio(id_departamento, nombre) VALUES (10,'San Pedro Pinula');
+INSER INTO municipio(id_departamento, nombre) VALUES (10,'San Carlos Alzatate');
+INSER INTO departamento(nombre) VALUES ('Jutiapa');
+INSER INTO municipio(id_departamento, nombre) VALUES (11,'Agua Blanca');
+INSER INTO municipio(id_departamento, nombre) VALUES (11,'Conguaco');
+INSER INTO municipio(id_departamento, nombre) VALUES (11,'Jerez');
+INSER INTO municipio(id_departamento, nombre) VALUES (11,'Quesada');
+INSER INTO municipio(id_departamento, nombre) VALUES (11,'Zapotitlán');
+INSER INTO municipio(id_departamento, nombre) VALUES (11,'Asunción Mita');
+INSER INTO municipio(id_departamento, nombre) VALUES (11,'El Adelanto');
+INSER INTO municipio(id_departamento, nombre) VALUES (11,'Jutiapa');
+INSER INTO municipio(id_departamento, nombre) VALUES (11,'San José Acatempa');
+INSER INTO municipio(id_departamento, nombre) VALUES (11,'Atescatempa');
+INSER INTO municipio(id_departamento, nombre) VALUES (11,'El Progreso');
+INSER INTO municipio(id_departamento, nombre) VALUES (11,'Moyuta');
+INSER INTO municipio(id_departamento, nombre) VALUES (11,'Santa Catarina Mita');
+INSER INTO municipio(id_departamento, nombre) VALUES (11,'Comapa');
+INSER INTO municipio(id_departamento, nombre) VALUES (11,'Jalpatagua');
+INSER INTO municipio(id_departamento, nombre) VALUES (11,'Pasaco');
+INSER INTO municipio(id_departamento, nombre) VALUES (11,'Yupiltepeque');
+INSER INTO departamento(nombre) VALUES ('Petén');
+INSER INTO municipio(id_departamento, nombre) VALUES (12,'Dolores');
+INSER INTO municipio(id_departamento, nombre) VALUES (12,'Melchor de Mencos');
+INSER INTO municipio(id_departamento, nombre) VALUES (12,'San Francisco');
+INSER INTO municipio(id_departamento, nombre) VALUES (12,'Sayaxché');
+INSER INTO municipio(id_departamento, nombre) VALUES (12,'Flores');
+INSER INTO municipio(id_departamento, nombre) VALUES (12,'Poptún');
+INSER INTO municipio(id_departamento, nombre) VALUES (12,'San José');
+INSER INTO municipio(id_departamento, nombre) VALUES (12,'La Libertad');
+INSER INTO municipio(id_departamento, nombre) VALUES (12,'San Andrés');
+INSER INTO municipio(id_departamento, nombre) VALUES (12,'San Luis');
+INSER INTO municipio(id_departamento, nombre) VALUES (12,'Las Cruces');
+INSER INTO municipio(id_departamento, nombre) VALUES (12,'San Benito');
+INSER INTO municipio(id_departamento, nombre) VALUES (12,'Santa Ana');
+INSER INTO departamento(nombre) VALUES ('Quetzaltenango');
+INSER INTO municipio(id_departamento, nombre) VALUES (13,'Almolonga');
+INSER INTO municipio(id_departamento, nombre) VALUES (13,'Coatepeque');
+INSER INTO municipio(id_departamento, nombre) VALUES (13,'Flores Costa Cuca');
+INSER INTO municipio(id_departamento, nombre) VALUES (13,'Olintepeque');
+INSER INTO municipio(id_departamento, nombre) VALUES (13,'San Carlos Sija');
+INSER INTO municipio(id_departamento, nombre) VALUES (13,'San Mateo');
+INSER INTO municipio(id_departamento, nombre) VALUES (13,'Cabricán');
+INSER INTO municipio(id_departamento, nombre) VALUES (13,'Colomba');
+INSER INTO municipio(id_departamento, nombre) VALUES (13,'Génova');
+INSER INTO municipio(id_departamento, nombre) VALUES (13,'Palestina de Los Altos');
+INSER INTO municipio(id_departamento, nombre) VALUES (13,'San Francisco La Unión');
+INSER INTO municipio(id_departamento, nombre) VALUES (13,'San Miguel Sigüilá');
+INSER INTO municipio(id_departamento, nombre) VALUES (13,'Cajolá');
+INSER INTO municipio(id_departamento, nombre) VALUES (13,'Concepción Chiquirichapa');
+INSER INTO municipio(id_departamento, nombre) VALUES (13,'Huitán');
+INSER INTO municipio(id_departamento, nombre) VALUES (13,'Quetzaltenango');
+INSER INTO municipio(id_departamento, nombre) VALUES (13,'San Juan Ostuncalco');
+INSER INTO municipio(id_departamento, nombre) VALUES (13,'Sibilia');
+INSER INTO municipio(id_departamento, nombre) VALUES (13,'Cantel');
+INSER INTO municipio(id_departamento, nombre) VALUES (13,'El Palmar');
+INSER INTO municipio(id_departamento, nombre) VALUES (13,'La Esperanza');
+INSER INTO municipio(id_departamento, nombre) VALUES (13,'Salcajá');
+INSER INTO municipio(id_departamento, nombre) VALUES (13,'San Martín Sacatepéquez');
+INSER INTO municipio(id_departamento, nombre) VALUES (13,'Zunil');
+INSER INTO departamento(nombre) VALUES ('Quiché');
+INSER INTO municipio(id_departamento, nombre) VALUES (14,'Canillá');
+INSER INTO municipio(id_departamento, nombre) VALUES (14,'Chichicastenango');
+INSER INTO municipio(id_departamento, nombre) VALUES (14,'Joyabaj');
+INSER INTO municipio(id_departamento, nombre) VALUES (14,'San Juan Cotzal');
+INSER INTO municipio(id_departamento, nombre) VALUES (14,'Zacualpa');
+INSER INTO municipio(id_departamento, nombre) VALUES (14,'Chajul');
+INSER INTO municipio(id_departamento, nombre) VALUES (14,'Chinique');
+INSER INTO municipio(id_departamento, nombre) VALUES (14,'Nebaj');
+INSER INTO municipio(id_departamento, nombre) VALUES (14,'San Andrés Sajcabajá');
+INSER INTO municipio(id_departamento, nombre) VALUES (14,'San Pedro Jocopilas');
+INSER INTO municipio(id_departamento, nombre) VALUES (14,'Chicamán');
+INSER INTO municipio(id_departamento, nombre) VALUES (14,'Cunén');
+INSER INTO municipio(id_departamento, nombre) VALUES (14,'Pachalum');
+INSER INTO municipio(id_departamento, nombre) VALUES (14,'San Antonio Ilotenango');
+INSER INTO municipio(id_departamento, nombre) VALUES (14,'Santa Cruz del Quiché');
+INSER INTO municipio(id_departamento, nombre) VALUES (14,'Chiché');
+INSER INTO municipio(id_departamento, nombre) VALUES (14,'Ixcán');
+INSER INTO municipio(id_departamento, nombre) VALUES (14,'Patzité');
+INSER INTO municipio(id_departamento, nombre) VALUES (14,'San Bartolomé Jocotenango');
+INSER INTO municipio(id_departamento, nombre) VALUES (14,'Uspantán');
+INSER INTO departamento(nombre) VALUES ('Retalhuleu');
+INSER INTO municipio(id_departamento, nombre) VALUES (15,'Champerico');
+INSER INTO municipio(id_departamento, nombre) VALUES (15,'San Andrés Villa Seca');
+INSER INTO municipio(id_departamento, nombre) VALUES (15,'Santa Cruz Muluá');
+INSER INTO municipio(id_departamento, nombre) VALUES (15,'El Asintal');
+INSER INTO municipio(id_departamento, nombre) VALUES (15,'San Felipe');
+INSER INTO municipio(id_departamento, nombre) VALUES (15,'Nuevo San Carlos');
+INSER INTO municipio(id_departamento, nombre) VALUES (15,'San Martín Zapotitlán');
+INSER INTO municipio(id_departamento, nombre) VALUES (15,'Retalhuleu');
+INSER INTO municipio(id_departamento, nombre) VALUES (15,'San Sebastián');
+INSER INTO departamento(nombre) VALUES ('Sacatepéquez');
+INSER INTO municipio(id_departamento, nombre) VALUES (16,'Alotenango');
+INSER INTO municipio(id_departamento, nombre) VALUES (16,'Magdalena Milpas Altas');
+INSER INTO municipio(id_departamento, nombre) VALUES (16,'San Lucas Sacatepéquez');
+INSER INTO municipio(id_departamento, nombre) VALUES (16,'Santa María de Jesús');
+INSER INTO municipio(id_departamento, nombre) VALUES (16,'La Antigua Guatemala');
+INSER INTO municipio(id_departamento, nombre) VALUES (16,'Pastores');
+INSER INTO municipio(id_departamento, nombre) VALUES (16,'San Miguel Dueñas');
+INSER INTO municipio(id_departamento, nombre) VALUES (16,'Santiago Sacatepéquez');
+INSER INTO municipio(id_departamento, nombre) VALUES (16,'Ciudad Vieja');
+INSER INTO municipio(id_departamento, nombre) VALUES (16,'San Antonio Aguas Calientes');
+INSER INTO municipio(id_departamento, nombre) VALUES (16,'Santa Catarina Barahona');
+INSER INTO municipio(id_departamento, nombre) VALUES (16,'Santo Domingo Xenacoj');
+INSER INTO municipio(id_departamento, nombre) VALUES (16,'Jocotenango');
+INSER INTO municipio(id_departamento, nombre) VALUES (16,'San Bartolomé Milpas Altas');
+INSER INTO municipio(id_departamento, nombre) VALUES (16,'Santa Lucía Milpas Altas');
+INSER INTO municipio(id_departamento, nombre) VALUES (16,'Sumpango');
+INSER INTO departamento(nombre) VALUES ('San Marcos');
+INSER INTO municipio(id_departamento, nombre) VALUES (17,'Ayutla');
+INSER INTO municipio(id_departamento, nombre) VALUES (17,'El Quetzal');
+INSER INTO municipio(id_departamento, nombre) VALUES (17,'Ixchiguán');
+INSER INTO municipio(id_departamento, nombre) VALUES (17,'Ocós');
+INSER INTO municipio(id_departamento, nombre) VALUES (17,'San Cristóbal Cucho');
+INSER INTO municipio(id_departamento, nombre) VALUES (17,'San Miguel Ixtahuacán');
+INSER INTO municipio(id_departamento, nombre) VALUES (17,'Sibinal');
+INSER INTO municipio(id_departamento, nombre) VALUES (17,'Tejutla');
+INSER INTO municipio(id_departamento, nombre) VALUES (17,'Catarina');
+INSER INTO municipio(id_departamento, nombre) VALUES (17,'El Rodeo');
+INSER INTO municipio(id_departamento, nombre) VALUES (17,'La Reforma');
+INSER INTO municipio(id_departamento, nombre) VALUES (17,'Pajapita');
+INSER INTO municipio(id_departamento, nombre) VALUES (17,'San José Ojetenam');
+INSER INTO municipio(id_departamento, nombre) VALUES (17,'San Pablo');
+INSER INTO municipio(id_departamento, nombre) VALUES (17,'Sipacapa');
+INSER INTO municipio(id_departamento, nombre) VALUES (17,'Comitancillo');
+INSER INTO municipio(id_departamento, nombre) VALUES (17,'El Tumbador');
+INSER INTO municipio(id_departamento, nombre) VALUES (17,'Malacatán');
+INSER INTO municipio(id_departamento, nombre) VALUES (17,'Río Blanco');
+INSER INTO municipio(id_departamento, nombre) VALUES (17,'San Lorenzo');
+INSER INTO municipio(id_departamento, nombre) VALUES (17,'San Pedro Sacatepéquez');
+INSER INTO municipio(id_departamento, nombre) VALUES (17,'Tacaná');
+INSER INTO municipio(id_departamento, nombre) VALUES (17,'Concepción Tutuapa');
+INSER INTO municipio(id_departamento, nombre) VALUES (17,'Esquipulas Palo Gordo');
+INSER INTO municipio(id_departamento, nombre) VALUES (17,'Nuevo Progreso');
+INSER INTO municipio(id_departamento, nombre) VALUES (17,'San Antonio Sacatepéquez');
+INSER INTO municipio(id_departamento, nombre) VALUES (17,'San Marcos');
+INSER INTO municipio(id_departamento, nombre) VALUES (17,'San Rafael Pie de La Cuesta');
+INSER INTO municipio(id_departamento, nombre) VALUES (17,'Tajumulco');
+INSER INTO departamento(nombre) VALUES ('Santa Rosa');
+INSER INTO municipio(id_departamento, nombre) VALUES (18,'Barberena');
+INSER INTO municipio(id_departamento, nombre) VALUES (18,'Guazacapán');
+INSER INTO municipio(id_departamento, nombre) VALUES (18,'San Juan Tecuaco');
+INSER INTO municipio(id_departamento, nombre) VALUES (18,'Santa Rosa de Lima');
+INSER INTO municipio(id_departamento, nombre) VALUES (18,'Casillas');
+INSER INTO municipio(id_departamento, nombre) VALUES (18,'Nueva Santa Rosa');
+INSER INTO municipio(id_departamento, nombre) VALUES (18,'San Rafaél Las Flores');
+INSER INTO municipio(id_departamento, nombre) VALUES (18,'Taxisco');
+INSER INTO municipio(id_departamento, nombre) VALUES (18,'Chiquimulilla');
+INSER INTO municipio(id_departamento, nombre) VALUES (18,'Oratorio');
+INSER INTO municipio(id_departamento, nombre) VALUES (18,'Santa Cruz Naranjo');
+INSER INTO municipio(id_departamento, nombre) VALUES (18,'Cuilapa');
+INSER INTO municipio(id_departamento, nombre) VALUES (18,'Pueblo Nuevo Viñas');
+INSER INTO municipio(id_departamento, nombre) VALUES (18,'Santa María Ixhuatán');
+INSER INTO departamento(nombre) VALUES ('Sololá');
+INSER INTO municipio(id_departamento, nombre) VALUES (19,'Concepción');
+INSER INTO municipio(id_departamento, nombre) VALUES (19,'San Antonio Palopó');
+INSER INTO municipio(id_departamento, nombre) VALUES (19,'San Marcos La Laguna');
+INSER INTO municipio(id_departamento, nombre) VALUES (19,'Santa Catarina Palopó');
+INSER INTO municipio(id_departamento, nombre) VALUES (19,'Santa María Visitación');
+INSER INTO municipio(id_departamento, nombre) VALUES (19,'Nahualá');
+INSER INTO municipio(id_departamento, nombre) VALUES (19,'San José Chacayá');
+INSER INTO municipio(id_departamento, nombre) VALUES (19,'San Pablo La Laguna');
+INSER INTO municipio(id_departamento, nombre) VALUES (19,'Santa Clara La Laguna');
+INSER INTO municipio(id_departamento, nombre) VALUES (19,'Santiago Atitlán');
+INSER INTO municipio(id_departamento, nombre) VALUES (19,'Panajachel');
+INSER INTO municipio(id_departamento, nombre) VALUES (19,'San Juan La Laguna');
+INSER INTO municipio(id_departamento, nombre) VALUES (19,'San Pedro La Laguna');
+INSER INTO municipio(id_departamento, nombre) VALUES (19,'Santa Cruz La Laguna');
+INSER INTO municipio(id_departamento, nombre) VALUES (19,'Sololá');
+INSER INTO municipio(id_departamento, nombre) VALUES (19,'San Andrés Semetabaj');
+INSER INTO municipio(id_departamento, nombre) VALUES (19,'San Lucas Tolimán');
+INSER INTO municipio(id_departamento, nombre) VALUES (19,'Santa Catarina Ixtahuacan');
+INSER INTO municipio(id_departamento, nombre) VALUES (19,'Santa Lucía Utatlán');
+INSER INTO departamento(nombre) VALUES ('Suchitepéquez');
+INSER INTO municipio(id_departamento, nombre) VALUES (20,'Chicacao');
+INSER INTO municipio(id_departamento, nombre) VALUES (20,'Pueblo Nuevo');
+INSER INTO municipio(id_departamento, nombre) VALUES (20,'San Bernardino');
+INSER INTO municipio(id_departamento, nombre) VALUES (20,'San Juan Bautista');
+INSER INTO municipio(id_departamento, nombre) VALUES (20,'Santa Bárbara');
+INSER INTO municipio(id_departamento, nombre) VALUES (20,'Cuyotenango');
+INSER INTO municipio(id_departamento, nombre) VALUES (20,'Río Bravo');
+INSER INTO municipio(id_departamento, nombre) VALUES (20,'San Francisco Zapotitlán');
+INSER INTO municipio(id_departamento, nombre) VALUES (20,'San Lorenzo');
+INSER INTO municipio(id_departamento, nombre) VALUES (20,'Santo Domingo');
+INSER INTO municipio(id_departamento, nombre) VALUES (20,'Mazatenango');
+INSER INTO municipio(id_departamento, nombre) VALUES (20,'Samayac');
+INSER INTO municipio(id_departamento, nombre) VALUES (20,'San Gabriel');
+INSER INTO municipio(id_departamento, nombre) VALUES (20,'San Miguel Panán');
+INSER INTO municipio(id_departamento, nombre) VALUES (20,'Santo Tomás La Unión');
+INSER INTO municipio(id_departamento, nombre) VALUES (20,'Patulul');
+INSER INTO municipio(id_departamento, nombre) VALUES (20,'San Antonio');
+INSER INTO municipio(id_departamento, nombre) VALUES (20,'San José El Ídolo');
+INSER INTO municipio(id_departamento, nombre) VALUES (20,'San Pablo Jocopilas');
+INSER INTO municipio(id_departamento, nombre) VALUES (20,'Zunilito');
+INSER INTO departamento(nombre) VALUES ('Totonicapán');
+INSER INTO municipio(id_departamento, nombre) VALUES (21,'Momostenango');
+INSER INTO municipio(id_departamento, nombre) VALUES (21,'San Francisco El Alto');
+INSER INTO municipio(id_departamento, nombre) VALUES (21,'San Andrés Xecul');
+INSER INTO municipio(id_departamento, nombre) VALUES (21,'Santa Lucía La Reforma');
+INSER INTO municipio(id_departamento, nombre) VALUES (21,'San Bartolo');
+INSER INTO municipio(id_departamento, nombre) VALUES (21,'Santa María Chiquimula');
+INSER INTO municipio(id_departamento, nombre) VALUES (21,'San Cristóbal Totonicapán');
+INSER INTO municipio(id_departamento, nombre) VALUES (21,'Totonicapán');
+INSER INTO departamento(nombre) VALUES ('Zacapa');
+INSER INTO municipio(id_departamento, nombre) VALUES (22,'Cabañas');
+INSER INTO municipio(id_departamento, nombre) VALUES (22,'La Unión');
+INSER INTO municipio(id_departamento, nombre) VALUES (22,'Usumatlán');
+INSER INTO municipio(id_departamento, nombre) VALUES (22,'Estanzuela');
+INSER INTO municipio(id_departamento, nombre) VALUES (22,'Río Hondo');
+INSER INTO municipio(id_departamento, nombre) VALUES (22,'Zacapa');
+INSER INTO municipio(id_departamento, nombre) VALUES (22,'Gualán');
+INSER INTO municipio(id_departamento, nombre) VALUES (22,'San Diego');
+INSER INTO municipio(id_departamento, nombre) VALUES (22,'Huité');
+INSER INTO municipio(id_departamento, nombre) VALUES (22,'Teculután');
