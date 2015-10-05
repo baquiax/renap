@@ -30,9 +30,9 @@ router.post('/', function(req, res, next) {
 
 router.get('/personas/:dpi', function(req, res, next) {
 	var dpi = req.params.dpi;
-	connection.query('SELECT * FROM persona WHERE dpi = ?', [dpi], function(err, rows, fields) {
-		if (err) throw err; 
-		console.log('Person', rows);
+	connection.query('SELECT * FROM personas WHERE dpi = ?', [dpi], function(err, rows, fields) {
+		//if (err) throw err; 
+		//console.log('Person', rows);
 	});
 	res.status(200).json({"dpi": dpi});
 });
