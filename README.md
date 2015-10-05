@@ -1,5 +1,6 @@
 # renap
-To first usage, install dependencies with: `npm install`
+To first usage, install dependencies with: `npm install`'
+
 Start project with `supervise bin/www `
 
 ### DEPENDENCIES
