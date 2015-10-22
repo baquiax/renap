@@ -1,7 +1,9 @@
 DELETE FROM municipio WHERE id_municipio > 0;
 DELETE FROM departamento WHERE id_departamento > 0;
+DELETE FROM estado_documento WHERE idestado_documento> 0;
 ALTER TABLE departamento AUTO_INCREMENT = 1;
 ALTER TABLE municipio AUTO_INCREMENT = 1;
+ALTER TABLE estado_documento AUTO_INCREMENT = 1;
 
 INSERT INTO departamento(nombre) VALUES ('Alta Verapaz');
 INSERT INTO municipio(id_departamento, nombre) VALUES (1,'Chahal');
@@ -360,3 +362,5 @@ INSERT INTO municipio(id_departamento, nombre) VALUES (22,'Huité');
 INSERT INTO municipio(id_departamento, nombre) VALUES (22,'Teculután');
 
 INSERT INTO pais(nombre, code) VALUES ('Guatemala', 'GT');
+INSERT INTO usuario(usuario, passwd, bloqueado) VALUES ("admin", md5("admin"), 0);
+INSERT INTO estado_documento(descripcion) VALUES("activo");

@@ -1,0 +1,35 @@
+<form id="search-form">
+	<label>Buscar por DPI:</label>
+	<input type="text" name="search" id="search-dpi"><br>
+	<input type="submit" value="Buscar">
+</form>
+<table id="table-result">
+	<tr>
+		<th>Nombre</th>
+		<th>Apellido</th>
+		<th>Nacimiento</th>
+		<th>Direccion</th>
+	</tr>
+</table>
+<script type="text/javascript">
+	jQuery("#search-form").on("submit", function() {		
+		var searchValue = jQuery("#search-dpi").val();
+		jQuery.ajax({
+			"url": "/api/personas/" + searchValue,
+			"success": function(data) {
+				var newTr = "<tr>";
+				var properties = ["nombre", "primer_apellido", "nacimiento", "direccion"];
+				for (var i = 0; i < properties.length; i++) {
+					newTr += "<td>" + data[properties[i]] + "</td>";	
+				}
+				jQuery("#table-result").append(newTr);
+			},
+			"error":function(err) {
+				if (err.status && err.status == 404) {
+					alert("No hemos encontrado persona con este DPI.");
+				}				
+			}
+		});	
+		return false;
+	});
+</script>

@@ -1,16 +1,62 @@
-<form method='POST' action='/people/'>
+<form method='POST' action='/api/personas/'>
+	<label>DPI: </label> <input type='text' name='dpi' id='dpi'>
+	<br/>
 	<label>Nombre: </label> <input type='text' name='nombre' id='nombre'>
-
-	<label>Segundo nombre: </label> <input type='text' name='segundo-nombre' id='segundo-nombre'>
-
-	<label>Tercer nombre: </label> <input type='text' name='tercer-nombre' id='tercer-nombre'>
-
-	<label>Primer apellido: </label> <input type='text' name='primer-apellido' id='primer-apellido'>	
-
-	<label>Segundo apellido: </label> <input type='text' name='segundo-apellido' id='segundo-apellido'>	
-	
+	<br/>
+	<label>Segundo nombre: </label> <input type='text' name='segundo_nombre' id='segundo-nombre'>
+	<br/>
+	<label>Tercer nombre: </label> <input type='text' name='tercer_nombre' id='tercer-nombre'>
+	<br/>
+	<label>Primer apellido: </label> <input type='text' name='primer_apellido' id='primer-apellido'>	
+	<br/>
+	<label>Segundo apellido: </label> <input type='text' name='segundo_apellido' id='segundo-apellido'>	
+	<br/>
 	<label>Género: </label>
-	<input type="check" name="genero" value="f">
-	<input type="check" name="genero" value="m">
-	
+	<label>F</label><input type="radio" name="genero" value="f">
+	<label>M</label><input type="radio" name="genero" value="m">
+	<br>
+	<label>Nacimiento: </label>
+	<input type="date" name="nacimiento">
+	<br>
+	<label>Departamento: </label>
+	<select id="departamentos">
+		<option value=""></option>
+		<script type="text/javascript">
+			jQuery.ajax({
+				"url": "/api/departamentos",
+				"success": function(data) {
+					var newOption = "";
+					for (var i = 0; i < data.length;  i++) {
+						newOption = "<option value='" + data[i].id_departamento + "'>" + data[i].nombre + "</option>"
+						jQuery("#departamentos").append(newOption);
+					}
+				}
+			});
+		</script>		
+	</select>
+	<select id="municipios" name="id_municipio">		
+		<script type="text/javascript">
+			jQuery("#departamentos").on("change", function() {
+				jQuery("#municipios").attr("disable",true);
+				if ((jQuery(this).val())) {
+					jQuery.ajax({
+						"url": "/api/departamentos/" + jQuery(this).val() + "/municipios",
+						"success": function(data) {
+							jQuery("#municipios").html("");
+							var newOption = "";
+							for (var i = 0; i < data.length;  i++) {
+								newOption = "<option value='" + data[i].id_municipio + "'>" + data[i].nombre + "</option>"
+								jQuery("#municipios").append(newOption);
+								jQuery("#municipios").attr("disable",false);
+							}
+						}
+					});		
+				}
+			});
+		</script>
+	</select>
+	<br>
+	<label>Direccion: </label> <input type='text' name='direccion' id='direccion'>
+	<br/>
+	<input type="submit" value="Guardar"/>
 </form>
