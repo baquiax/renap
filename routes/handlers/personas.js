@@ -49,7 +49,7 @@ exports.postPersona = function (connection, messages, req, res, validateRequired
 		if (err) {
 			return res.status(400).json(messages.message400);
 		} else {			
-			// TRANSACTION REQUIRED
+			// TRANSACTION REQUIRED https://www.npmjs.com/package/mysql#transactions
 			// Estado 1 = Activo!
 			var insertDPIQuery = "INSERT INTO dpi(dpi, fecha_emision, fecha_vencimiento, estado_documento) VALUES(?,now(),date_add(now(), interval 4 year),1)";
 			connection.query(insertDPIQuery, req.body.dpi, function(err, rows, fields) {				
@@ -106,7 +106,7 @@ exports.putPersona = function (connection, messages, req, res, next) {
 				oldData.push(rows[0][fieldsToUpdate[i].replace('municipio', 'id_municipio')]);
 			}
 			oldData.push(dpi);			
-			//TRANSACTION IS NECESSARY				
+			//TRANSACTION IS NECESSARY https://www.npmjs.com/package/mysql#transactions				
 			connection.query('UPDATE persona SET ' + fieldSetsInstructions.join(',').replace('municipio', 'id_municipio') + ' WHERE dpi = ?', newData.concat([dpi]),
 				function (err, rows, fields) {
 					if (err) return res.status(400).json(err);
