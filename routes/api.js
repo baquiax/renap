@@ -73,7 +73,7 @@ router.put("/personas/:dpi", function (req, res, next) {
 	personas.putPersona(connection, messages, req, res);
 });
 
-router.get("/persona/parentescos", function(req, res) {
+router.get("/personas/parentescos", function(req, res) {
 	parentescoPersonas.getParentescos(connection, messages, req, res);
 });
 
