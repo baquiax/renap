@@ -77,7 +77,7 @@ router.get("/persona/parentescos", function(req, res) {
 	parentescoPersonas.getParentescos(connection, messages, req, res);
 });
 
-router.post("/persona/parentesco", function(req, res) {
+router.post("/personas/parentesco", function(req, res) {
 	parentescoPersonas.postParentesco(connection, messages, req, res, validateRequiredParameters);
 });
 
