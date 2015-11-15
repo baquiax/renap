@@ -1,9 +1,31 @@
-exports.getDeptos = function (connection, messages, req, res) {	
-	connection.query("SELECT * FROM departamento", function (err, rows, fields) {
+exports.getDeptos = function (connection, messages, req, res) {
+	connection.query("SELECT d.id_departamento, d.nombre as dname, m.id_municipio, m.nombre as mname  FROM departamento d, municipio m WHERE d.id_departamento = m.id_departamento ORDER BY d.id_departamento, m.id_municipio", function (err, rows, fields) {
 		if (err) {
 			return res.status(500).json(messages.message500);
 		}
-		return res.status(200).json(rows);
+		var deptoRows = [];		
+				
+		var currentRow;		
+		for (var i = 0; i < rows.length; i++) {
+			var row = rows[i]												
+			
+			if (!currentRow || (currentRow && currentRow["id_departamento"] != row["id_departamento"])) {				
+				if (currentRow) {
+					deptoRows.push(currentRow);						
+				} 
+				currentRow = {
+					"id_departamento": row["id_departamento"],
+					"nombre": row["dname"],
+					"municipios": []
+				};				
+			}
+			currentRow.municipios.push({
+				"id_municipio": row["id_municipio"],
+				"nombre": row["mname"]
+			});
+		}		
+		console.log(deptoRows);
+		return res.status(200).json(deptoRows);
 	});
 };
 

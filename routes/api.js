@@ -8,9 +8,9 @@ var deptosMunicipios = require("./handlers/deptosMunicipios");
 var dpi = require("./handlers/dpi");
 
 var connection = mysql.createConnection({
-	host: "localhost",
-	user: "baquiax",
-	password: "admin",
+	host: "192.168.0.33",
+	user: "root",
+	password: "",
 	database: "renap"
 });
 
@@ -61,16 +61,36 @@ router.get("/departamentos/:id(\\d+)/municipios", function (req, res) {
 	deptosMunicipios.getMunicipios(connection, messages, req, res);
 });
 
-router.get('/personas/:dpi', function (req, res) {
-	personas.getPersona(connection, messages, req, res);
-});
-
 router.post("/personas/", function (req, res) {
 	personas.postPersona(connection, messages, req, res, validateRequiredParameters);
 });
 
-router.put("/personas/:dpi", function (req, res, next) {
+router.get('/personas/:dpi', function (req, res) {
+	personas.getPersona(connection, messages, req, res);
+});
+
+router.post("/personas/:dpi/actualizar", function (req, res, next) {
 	personas.putPersona(connection, messages, req, res);
+});
+
+router.get("/personas/:dpi/familiares", function (req, res, next) {
+	personas.getFamiliares(connection, messages, req, res);
+});
+
+router.get("/personas/:dpi/familiares/padres", function (req, res, next) {
+	personas.getPadres(connection, messages, req, res);
+});
+
+router.get("/personas/:dpi/familiares/conyuges", function (req, res, next) {
+	personas.getConyuges(connection, messages, req, res);
+});
+
+router.get("/personas/:dpi/familiares/hermanos", function (req, res, next) {
+	personas.getHermanos(connection, messages, req, res);
+});
+
+router.get("/personas/:dpi/familiares/hijos", function (req, res, next) {
+	personas.getHijos(connection, messages, req, res);
 });
 
 router.get("/personas/parentescos", function(req, res) {
@@ -81,14 +101,34 @@ router.post("/personas/parentesco", function(req, res) {
 	parentescoPersonas.postParentesco(connection, messages, req, res, validateRequiredParameters);
 });
 
-router.get("/dpi/estados", function(req, res) {
+router.post("/personas/:dpi1/casar/:dpi2", function(req, res) {
+	parentescoPersonas.postCasar(connection, messages, req, res);
+});
+
+router.post("/personas/:dpi1/padre/:dpi2", function(req, res) {
+	parentescoPersonas.postCasar(connection, messages, req, res);
+});
+
+router.get("/documento/estados", function(req, res) {
 	dpi.getEstados(connection, messages, req, res);
 });
 
-router.post("/dpi/estados", function(req, res) {
+router.post("/documento/estados", function(req, res) {
 	dpi.postEstados(connection, messages, req, res, validateRequiredParameters);
 });
  
+router.get("/documento/:dpi", function(req, res) {
+	dpi.getDocumento(connection, messages, req, res, validateRequiredParameters);
+});
+ 
+router.post("/documento/:dpi", function(req, res) {
+	dpi.putDocumento(connection, messages, req, res, validateRequiredParameters);
+});
+
+router.post("/documento", function(req, res) {
+	dpi.postDocumento(connection, messages, req, res, validateRequiredParameters);
+});
+
 router.get("/personas/:dpi/familiar/:tipo_p(\\d+)", function(req, res){
 	parentescoPersonas.getFamiliares(connection, messages, req, res);
 });
@@ -104,7 +144,11 @@ router.post("/admin/users", function(req,res){
 });
 //TODO- OBTENER USUARIO
 
-//TODO- OBTENER USUARIOS
+router.get("/status", function(req,res){
+	res.status(200).json({
+		"readyForRequest": true
+	});
+});
 
 router.get('*', function (req, res) {
 	res.status(404).json(messages.message404);

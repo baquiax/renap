@@ -14,6 +14,36 @@ exports.postParentesco = function(connection, messages, req, res, validateRequir
 	});
 };
 
+exports.postCasar = function(connection, messages, req, res, validateRequiredParameters) {	
+	var dpi1 = req.params.dpi1;
+	var dpi2 = req.params.dpi2;
+	var query = "INSERT INTO parentesco (dpi, dpi_relacion, tipo_parentesco) VALUES (?, ?, 3);";
+	if (dpi1 == dpi2) {
+		return res.status(400).json({
+			"error": "No es posible relacionarse a uno mismo en un parentesco..."
+		});
+	}
+	connection.query(query, [dpi1, dpi2], function(err, rows, fields){
+		if (err) return res.status(400).json(messages.message400);
+		return res.status(200).json(messages.message200);
+	});
+};
+
+exports.postPadre = function(connection, messages, req, res, validateRequiredParameters) {	
+	var dpi1 = req.params.dpi1;
+	var dpi2 = req.params.dpi2;
+	var query = "INSERT INTO parentesco (dpi, dpi_relacion, tipo_parentesco) VALUES (?, ?, 2);";
+	if (dpi1 == dpi2) {
+		return res.status(400).json({
+			"error": "No es posible relacionarse a uno mismo en un parentesco..."
+		});
+	}
+	connection.query(query, [dpi1, dpi2], function(err, rows, fields){
+		if (err) return res.status(400).json(messages.message400);
+		return res.status(200).json(messages.message200);
+	});
+};
+
 exports.getParentescos = function(connection, messages, req, res) {
 	var query = "SELECT * FROM tipo_parentesco";
 	connection.query(query, function(err, rows, fields){

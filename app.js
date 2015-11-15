@@ -24,8 +24,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', applicationRoutes);
-app.use('/api', apiRoutes);
+app.use('/renap', applicationRoutes);
+app.use('/', apiRoutes);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

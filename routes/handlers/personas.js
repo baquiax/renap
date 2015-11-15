@@ -1,6 +1,6 @@
 exports.getPersona = function (connection, messages,req, res, next) {
 	var dpi = req.params.dpi;
-	connection.query('SELECT dpi, nombre, segundo_nombre, tercer_nombre, primer_apellido, segundo_apellido, genero, date_format(nacimiento, "%d/%m/%Y") as nacimiento, id_municipio, direccion FROM persona WHERE dpi = ?', [dpi], function (err, rows, fields) {
+	connection.query('SELECT dpi, nombre, segundo_nombre, tercer_nombre, primer_apellido, segundo_apellido, genero, date_format(nacimiento, "%d/%m/%Y") as nacimiento, date_format(fecha_defuncion, "%d/%m/%Y") as fecha_defuncion,id_municipio, direccion FROM persona WHERE dpi = ?', [dpi], function (err, rows, fields) {
 		if (err) return res.status(400).json(err);
 		if (rows && rows.length)
 			return res.status(200).json(rows[0]);
@@ -18,6 +18,11 @@ exports.postPersona = function (connection, messages, req, res, validateRequired
 	if (!req.body.nacimiento.match(/^(0?[1-9]|[12][0-9]|3[01])[\/\-](0?[1-9]|1[012])[\/\-]\d{4}$/)) {
 		return res.status(400).json({ "error": "Fecha de nacimiento debe tener el formato: DD/MM/YYYY" });
 	}
+	
+	if (!req.body.municipio.match(/^\d+$/)) {
+		return res.status(400).json({ "error": "id_municipio invalido." });
+	}
+	
 	req.body.genero = req.body.genero.toLowerCase();
 	if (!["f", "m"].indexOf(req.body.genero)) {
 		return res.status(400).json({ "error": "Por el momento solo es posible: 'f' o 'm' para el genero, elija usted." });
@@ -41,8 +46,8 @@ exports.postPersona = function (connection, messages, req, res, validateRequired
 			wildCards.push("?");
 		values.push(req.body[requiredParameters[i]]);
 	}
-	columnNames = columnNames.concat(["creado_por", "ultima_modificacion", "fecha_creacion","fecha_modificacion"]);
-	wildCards = wildCards.concat(["'admin'", "'admin'", "now()", "now()" ,]);
+	columnNames = columnNames.concat(["fecha_creacion"]);
+	wildCards = wildCards.concat(["now()"]);
 	
 	var query = "INSERT INTO persona(" + columnNames.join(",") + ") VALUES(" + wildCards.join(",") + ");";	
 	connection.query(query, values, function (err, rows, fields) {		
@@ -51,7 +56,7 @@ exports.postPersona = function (connection, messages, req, res, validateRequired
 		} else {			
 			// TRANSACTION REQUIRED https://www.npmjs.com/package/mysql#transactions
 			// Estado 1 = Activo!
-			var insertDPIQuery = "INSERT INTO dpi(dpi, fecha_emision, fecha_vencimiento, estado_documento) VALUES(?,now(),date_add(now(), interval 4 year),1)";
+			var insertDPIQuery = "INSERT INTO dpi(dpi, fecha_emision, fecha_vencimiento, estado_documento) VALUES(?,now(),date_add(now(), interval 3 year), 3)";
 			connection.query(insertDPIQuery, req.body.dpi, function(err, rows, fields) {				
 				if (err) return res.status(400).json(messages.message400);
 				return res.status(200).json(messages.message200);				
@@ -61,7 +66,7 @@ exports.postPersona = function (connection, messages, req, res, validateRequired
 };
 
 exports.putPersona = function (connection, messages, req, res, next) {
-	var validParameters = ["nombre", "segundo_nombre", "tercer_nombre", "primer_apellido", "segundo_apellido", "direccions", "genero", "municipio", "fecha_defuncion"];
+	var validParameters = ["nombre", "segundo_nombre", "tercer_nombre", "primer_apellido", "segundo_apellido", "direccion", "genero", "id_municipio", "id_pais", "fecha_defuncion", "nacimiento"];
 	var fieldsToUpdate = [];
 	var fieldSetsInstructions = [];
 	var newData = [];
@@ -79,7 +84,7 @@ exports.putPersona = function (connection, messages, req, res, next) {
 					wildCard = "str_to_date(?, '%d/%m/%Y')";
 				}
 			}
-			if (validParameters[i] == "municipio" && !req.body.municipio.match(/^\d+$/)) {
+			if (validParameters[i] == "id_municipio" && !req.body.id_municipio.match(/^\d+$/)) {
 				message.error += "\nCodigo de municipio incorrecto.";
 				return res.status(400).json(message);
 			}
@@ -98,16 +103,16 @@ exports.putPersona = function (connection, messages, req, res, next) {
 	}
 
 	var dpi = req.params.dpi;
-	connection.query('SELECT ' + fieldsToUpdate.join(",").replace('municipio', 'id_municipio') + ' FROM persona WHERE dpi = ?', [dpi], function (err, rows, fields) {
+	connection.query('SELECT ' + fieldsToUpdate.join(",") + ' FROM persona WHERE dpi = ?', [dpi], function (err, rows, fields) {
 		if (err) return res.status(400).json(err);
 		if (rows && rows.length) {
 			var oldData = [];
 			for (var i = 0; i < fieldsToUpdate.length; i++) {
-				oldData.push(rows[0][fieldsToUpdate[i].replace('municipio', 'id_municipio')]);
+				oldData.push(rows[0][fieldsToUpdate[i]]);
 			}
 			oldData.push(dpi);			
 			//TRANSACTION IS NECESSARY https://www.npmjs.com/package/mysql#transactions				
-			connection.query('UPDATE persona SET ' + fieldSetsInstructions.join(',').replace('municipio', 'id_municipio') + ' WHERE dpi = ?', newData.concat([dpi]),
+			connection.query('UPDATE persona SET ' + fieldSetsInstructions.join(',') + ' WHERE dpi = ?', newData.concat([dpi]),
 				function (err, rows, fields) {
 					if (err) return res.status(400).json(err);
 					connection.query("INSERT INTO historial_persona (" + fieldsToUpdate.concat(["dpi", "fecha_modificacion"]).join(",") + ") VALUES(" + newDataWildcards.concat(["?", "now()"]).join(",") + ")", oldData,
@@ -120,4 +125,74 @@ exports.putPersona = function (connection, messages, req, res, next) {
 				);
 		} else return res.status(404).json(messages.message404);
 	});
+};
+
+exports.getPadres = function (connection, messages,req, res, next) {
+	var dpi = req.params.dpi;
+	connection.query('SELECT dpi_relacion FROM parentesco WHERE tipo_parentesco = 2 AND dpi = ?', 	dpi, function (err, rows, fields) {
+		if (err) return res.status(400).json(err);
+		if (rows && rows.length)
+			return res.status(200).json(rows);
+		else
+			return res.status(404).json(messages.message404);
+	});
+};
+
+exports.getConyuges = function (connection, messages,req, res, next) {
+	var dpi = req.params.dpi;
+	connection.query('SELECT dpi_relacion FROM parentesco WHERE tipo_parentesco = 3 AND dpi = ? UNION SELECT dpi as dpi_relacion FROM parentesco WHERE tipo_parentesco = 3 AND dpi_relacion = ?', [dpi, dpi], function (err, rows, fields) {
+		if (err) return res.status(400).json(err);
+		if (rows && rows.length)
+			return res.status(200).json(rows);
+		else
+			return res.status(404).json(messages.message404);
+	});
+};
+
+exports.getHermanos = function (connection, messages,req, res, next) {
+	var dpi = req.params.dpi;
+	connection.query('SELECT DISTINCT dpi as dpi_relacion FROM parentesco p WHERE p.dpi_relacion IN (SELECT dpi_relacion FROM parentesco p2 WHERE p2.tipo_parentesco = 2 AND p2.dpi = ?) AND p.dpi != ? AND p.tipo_parentesco = 2;', [dpi, dpi], function (err, rows, fields) {
+		if (err) return res.status(400).json(err);
+		if (rows && rows.length)
+			return res.status(200).json(rows);
+		else
+			return res.status(404).json(messages.message404);
+	});
+};
+
+exports.getHijos = function (connection, messages,req, res, next) {
+	var dpi = req.params.dpi;
+	connection.query('SELECT dpi as dpi_relacion FROM parentesco p WHERE p.dpi_relacion = ? AND p.tipo_parentesco = 2;', [dpi], function (err, rows, fields) {
+		if (err) return res.status(400).json(err);
+		if (rows && rows.length)
+			return res.status(200).json(rows);
+		else
+			return res.status(404).json(messages.message404);
+	});
+};
+
+exports.getFamiliares = function (connection, messages,req, res, next) {
+	var dpi = req.params.dpi;
+	var response = {"padres": [],"conyuge":[],"hermanos":[], "hijos":[]};
+	connection.query('SELECT dpi_relacion FROM parentesco WHERE tipo_parentesco = 2 AND dpi = ?', [dpi], function (err, rows, fields) {		
+		if(!err) {			
+			response["padres"] = rows;
+		}
+		connection.query('SELECT dpi_relacion FROM parentesco WHERE tipo_parentesco = 3 AND dpi = ? UNION SELECT dpi as dpi_relacion FROM parentesco WHERE tipo_parentesco = 3 AND dpi_relacion = ?', [dpi, dpi], function (err, rows, fields) {
+			if(!err) {
+				response["conyuges"] = rows;
+			}
+			connection.query('SELECT DISTINCT dpi as dpi_relacion FROM parentesco p WHERE p.dpi_relacion IN (SELECT dpi_relacion FROM parentesco p2 WHERE p2.tipo_parentesco = 2 AND p2.dpi = ?) AND p.dpi != ? AND p.tipo_parentesco = 2;', [dpi, dpi], function (err, rows, fields) {
+				if(!err) {
+					response["hermanos"] = rows;
+				}
+				connection.query('SELECT dpi as dpi_relacion FROM parentesco p WHERE p.dpi_relacion = ? AND p.tipo_parentesco = 2;', [dpi], function (err, rows, fields) {
+					if(!err) {
+						response["hijos"] = rows;
+					}					
+					return res.status(200).json(response);
+				});
+			});
+		});
+	});			
 };
