@@ -5,8 +5,8 @@ exports.getPersona = function (connection, messages,req, res, next) {
 		if (rows && rows.length)
 			return res.status(200).json(rows[0]);
 		else
-			return res.status(404).json(messages.message404);
-	});
+			return res.status(200).json(messages.message404);
+	});	
 };
 
 exports.postPersona = function (connection, messages, req, res, validateRequiredParameters) {

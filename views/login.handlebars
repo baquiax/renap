@@ -1,1 +1,9 @@
-mednu
+<script type="text/javascript">
+	function login() {
+		var login = window.open("http://localhost/oauth/authorize?client_id=testclient&response_type=code&state=ok", "login", "height=620,width=480");
+		return false;
+	}
+</script>
+<form onsubmit="return login();" method="POST">
+	<button>LOGIN</button>
+</form>
