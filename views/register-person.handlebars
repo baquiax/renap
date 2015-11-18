@@ -1,4 +1,7 @@
-<form method='POST' action='/api/personas/'>
+<script>
+	window.departamentos = {{{ deptos }}};
+</script>
+<form method='POST' action='/inscribir-persona'>
 	<label>DPI: </label> <input type='text' name='dpi' id='dpi'>
 	<br/>
 	<label>Nombre: </label> <input type='text' name='nombre' id='nombre'>
@@ -21,17 +24,12 @@
 	<label>Departamento: </label>
 	<select id="departamentos">
 		<option value=""></option>
-		<script type="text/javascript">
-			jQuery.ajax({
-				"url": "/api/departamentos",
-				"success": function(data) {
-					var newOption = "";
-					for (var i = 0; i < data.length;  i++) {
-						newOption = "<option value='" + data[i].id_departamento + "'>" + data[i].nombre + "</option>"
-						jQuery("#departamentos").append(newOption);
-					}
-				}
-			});
+		<script type="text/javascript">			
+			var newOption = "";			
+			for (var i = 0; i < departamentos.length;  i++) {
+				newOption = "<option value='" + departamentos[i].id_departamento + "'>" + departamentos[i].nombre + "</option>"
+				jQuery("#departamentos").append(newOption);
+			}
 		</script>		
 	</select>
 	<select id="municipios" name="id_municipio">		
@@ -39,24 +37,21 @@
 			jQuery("#departamentos").on("change", function() {
 				jQuery("#municipios").attr("disable",true);
 				if ((jQuery(this).val())) {
-					jQuery.ajax({
-						"url": "/api/departamentos/" + jQuery(this).val() + "/municipios",
-						"success": function(data) {
-							jQuery("#municipios").html("");
-							var newOption = "";
-							for (var i = 0; i < data.length;  i++) {
-								newOption = "<option value='" + data[i].id_municipio + "'>" + data[i].nombre + "</option>"
-								jQuery("#municipios").append(newOption);
-								jQuery("#municipios").attr("disable",false);
-							}
-						}
-					});		
+					jQuery("#municipios").html("");
+					var municipios = departamentos[jQuery(this).val() -1 ].municipios;
+					var newOption = "";
+					for (var i = 0; i < municipios.length;  i++) {
+						newOption = "<option value='" + municipios[i].id_municipio + "'>" + municipios[i].nombre + "</option>"
+						jQuery("#municipios").append(newOption);
+						jQuery("#municipios").attr("disable",false);
+					}
 				}
 			});
 		</script>
 	</select>
 	<br>
-	<label>Direccion: </label> <input type='text' name='direccion' id='direccion'>
+	<label>Direccion: </label> <input type='text' name='direccion' id='direccion'>	
 	<br/>
+	<input type="hidden" name="access_token" value="{{ token }}"/>
 	<input type="submit" value="Guardar"/>
 </form>

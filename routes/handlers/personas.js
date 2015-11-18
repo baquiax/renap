@@ -2,9 +2,9 @@ exports.getPersona = function (connection, messages,req, res, next) {
 	var dpi = req.params.dpi;
 	connection.query('SELECT dpi, nombre, segundo_nombre, tercer_nombre, primer_apellido, segundo_apellido, genero, date_format(nacimiento, "%d/%m/%Y") as nacimiento, date_format(fecha_defuncion, "%d/%m/%Y") as fecha_defuncion,id_municipio, direccion FROM persona WHERE dpi = ?', [dpi], function (err, rows, fields) {
 		if (err) return res.status(400).json(err);
-		if (rows && rows.length)
+		if (rows && rows.length) {
 			return res.status(200).json(rows[0]);
-		else
+		} else
 			return res.status(200).json(messages.message404);
 	});	
 };
@@ -84,6 +84,14 @@ exports.putPersona = function (connection, messages, req, res, next) {
 					wildCard = "str_to_date(?, '%d/%m/%Y')";
 				}
 			}
+			if (validParameters[i] == "nacimiento") {
+				if (!req.body.nacimiento.match(/^(0?[1-9]|[12][0-9]|3[01])[\/\-](0?[1-9]|1[012])[\/\-]\d{4}$/)) {
+					message.error += "\nFormato de fecha incorrecto.";
+					return res.status(400).json(message);
+				} else {
+					wildCard = "str_to_date(?, '%d/%m/%Y')";
+				}
+			}
 			if (validParameters[i] == "id_municipio" && !req.body.id_municipio.match(/^\d+$/)) {
 				message.error += "\nCodigo de municipio incorrecto.";
 				return res.status(400).json(message);
@@ -93,9 +101,7 @@ exports.putPersona = function (connection, messages, req, res, next) {
 			newData.push(req.body[validParameters[i]]);
 			newDataWildcards.push("?");
 		}
-	}
-	//FORCE UPDATE DATE 
-	fieldSetsInstructions.push("fecha_modificacion=now()");
+	}	
 
 	if (!fieldsToUpdate.length) {
 		message.error += "\nDesea modificar algo?";
@@ -110,7 +116,9 @@ exports.putPersona = function (connection, messages, req, res, next) {
 			for (var i = 0; i < fieldsToUpdate.length; i++) {
 				oldData.push(rows[0][fieldsToUpdate[i]]);
 			}
-			oldData.push(dpi);			
+			oldData.push(dpi);
+			console.log(newData.concat([dpi]));			
+			console.log('UPDATE persona SET ' + fieldSetsInstructions.join(',') + ' WHERE dpi = ?');
 			//TRANSACTION IS NECESSARY https://www.npmjs.com/package/mysql#transactions				
 			connection.query('UPDATE persona SET ' + fieldSetsInstructions.join(',') + ' WHERE dpi = ?', newData.concat([dpi]),
 				function (err, rows, fields) {
@@ -145,7 +153,7 @@ exports.getConyuges = function (connection, messages,req, res, next) {
 		if (rows && rows.length)
 			return res.status(200).json(rows);
 		else
-			return res.status(404).json(messages.message404);
+			return res.status(200).json(messages.message404);
 	});
 };
 
@@ -156,7 +164,7 @@ exports.getHermanos = function (connection, messages,req, res, next) {
 		if (rows && rows.length)
 			return res.status(200).json(rows);
 		else
-			return res.status(404).json(messages.message404);
+			return res.status(200).json(messages.message404);
 	});
 };
 

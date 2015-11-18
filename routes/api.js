@@ -6,12 +6,13 @@ var personas = require("./handlers/personas");
 var parentescoPersonas = require("./handlers/parentescoPersonas");
 var deptosMunicipios = require("./handlers/deptosMunicipios");
 var dpi = require("./handlers/dpi");
-
+var mysqlMasterIP = "192.168.0.109";
 var connection = mysql.createConnection({
-	host: "192.168.0.33",
+	host: mysqlMasterIP,
 	user: "root",
 	password: "",
-	database: "renap"
+	database: "renap",
+	acquireTimeout: 5000
 });
 
 connection.connect(function (err) {
@@ -145,9 +146,27 @@ router.post("/admin/users", function(req,res){
 //TODO- OBTENER USUARIO
 
 router.get("/status", function(req,res){
-	res.status(200).json({
-		"readyForRequest": true
-	});
+	if (! connection) {
+		console.log("Reiniciar");
+	}
+	
+	connection.query("SELECT 1 FROM dual", function (err, rows, fields) {
+		var val = true;
+		if (err) {
+			val = false;
+			connection = mysql.createConnection({
+				host: mysqlMasterIP,
+				user: "root",
+				password: "",
+				database: "renap",
+				acquireTimeout: 5000
+			});
+		}
+		res.status(200).json({
+			"readyForRequest": val,
+			"isMaster": true
+		});
+	});	
 });
 
 router.get('*', function (req, res) {

@@ -23,8 +23,7 @@ exports.getDeptos = function (connection, messages, req, res) {
 				"id_municipio": row["id_municipio"],
 				"nombre": row["mname"]
 			});
-		}		
-		console.log(deptoRows);
+		}
 		return res.status(200).json(deptoRows);
 	});
 };

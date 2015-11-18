@@ -1,9 +1,15 @@
 <script type="text/javascript">
 	function login() {
-		var login = window.open("http://localhost/oauth/authorize?client_id=testclient&response_type=code&state=ok", "login", "height=620,width=480");
+		var login = window.open("http://{{oauthIP}}/oauth/authorize?client_id={{oauthClientId}}&response_type=code&state=ok", "login", "height=620,width=480");
 		return false;
 	}
 </script>
-<form onsubmit="return login();" method="POST">
-	<button>LOGIN</button>
-</form>
+<div class="panel panel-default">
+	<div class="panel-body">
+		<form onsubmit="return login();" method="POST">
+			<p class="text-warning">Para poder administrar el sistema es necesario que uses una cuenta válida, para poder validarla precinona el boton <b>ACCEDER</b></p>
+			<br/>
+			<button class="btn btn-primary"><b>ACCEDER CON OAuth</b></button>
+		</form>
+	</div>
+</div>
